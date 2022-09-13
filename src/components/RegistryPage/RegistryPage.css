@@ -1,0 +1,28 @@
+.registry-main-div {
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.registry-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: var(--main-black);
+    font-family: 'Ibarra Real Nova';
+}
+.registry-section h2, .registry-section h3, .reception-to-follow {
+    border-bottom: 1px solid var(--main-rust);
+}
+
+.registry-section-subtext {
+    font-family: Raleway;
+    font-size: 0.7em;
+}

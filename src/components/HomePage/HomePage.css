@@ -1,0 +1,143 @@
+.home-page {
+    height: 100%;
+    width: 80%;
+    padding-top: 5em;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hero-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Cormorant SC';
+    color: var(--main-black);
+    width: 80%;
+}
+
+#hero-title {
+    font-size: 2em;
+    /* padding-bottom: 1.5em; */
+}
+
+.flower {
+    width: 100%;
+}
+
+.rsvp {
+    border: 1px solid var(--main-rust);
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--main-rust);
+    margin-top: 1em;
+}
+
+.rsvp:hover, .rsvp:active {
+    cursor: pointer;
+    background-color: var(--main-rust);
+    color: var(--main-cream);
+}
+
+.the-wedding-section {
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+                    "title title title"
+                    "when empty where"
+                    "button button button"
+                    "reception reception reception";
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+    margin: 20%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: 'Ibarra Real Nova';
+    color: var(--main-black);
+}
+#wedding-title {
+    grid-area: title;
+    align-self: center;
+}
+#when {
+    grid-area: when;
+}
+#where {
+    grid-area: where;
+}
+#reception {
+    grid-area: reception;
+}
+#wedding-title, #when, #where, #reception {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+}
+.the-wedding-section h2, .the-wedding-section h3 {
+    width: fit-content;
+    border-bottom: 1px solid var(--main-rust);
+}
+.the-wedding-section h3 {
+    margin: 1em 0;
+}
+.the-wedding-section h5 {
+    margin-bottom: -0.5em;
+}
+@media only screen and (max-width: 500px) {
+    .the-wedding-section {
+        display: none;
+    } 
+}
+
+@media only screen and (min-width: 700px) {
+    .hero-section {
+        margin-top: 0;
+        /* padding-top: 350px; */
+    }
+    #hero-title {
+        font-size: 3.5em;
+    }
+    .hero-section h3 {
+        font-size: 1.5em;
+    }
+    .hero-section h2 {
+        margin: 1em;
+    }
+    .flower {
+        width: 300px;
+    }
+    .the-wedding-section {
+        margin: 5% 15%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                        "title"
+                        "when"
+                        "where"
+                        "reception";
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main-div {
+        height: 900px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .main-div {
+        height: 800px;
+    }
+}
