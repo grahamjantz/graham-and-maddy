@@ -14,6 +14,7 @@ export const invitesSent = false;
 const App = () => {  
   return (
     <div className="App">
+      
       <NavbarList />
       <div className='main-container'>
         <Routes>

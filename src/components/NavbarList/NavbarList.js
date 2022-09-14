@@ -65,15 +65,20 @@ const NavbarList = () => {
 
   return (
     <div className='navbar'>
-        <div 
-          id="navMenu" 
-          className={sideNavClass} 
-          onClick={() => {
-            slideIn();
-        }}>
-          <span style={{ backgroundColor: '#EEE2D2'}}></span>
-          <span style={{ backgroundColor: '#EEE2D2'}}></span>
-          <span style={{ backgroundColor: '#EEE2D2'}}></span>
+        <div className='banner'>
+            <NavLink to='/' className='gm-badge'>
+                G&M
+            </NavLink>
+            <div 
+                id="navMenu" 
+                className={sideNavClass} 
+                onClick={() => {
+                    slideIn();
+                    }}>
+                <span style={{ backgroundColor: '#EEE2D2'}}></span>
+                <span style={{ backgroundColor: '#EEE2D2'}}></span>
+                <span style={{ backgroundColor: '#EEE2D2'}}></span>
+            </div>
         </div>
         <ul className={`navbar-list ${sideNavClass}`}>
             {navbarMap}

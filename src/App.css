@@ -29,7 +29,7 @@
 .main-container {
   width: 100%;
   max-width: 1300px;
-  min-height: 300vh;
+  min-height: 450vh;
   max-height: fit-content;
   margin: 0 auto;
   background-image: url('../src/images/CreamArch.1.png');
