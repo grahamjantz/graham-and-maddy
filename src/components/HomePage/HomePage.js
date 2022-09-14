@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
-    <div className='home-page'>
       <div className = "main-div" id = "mainDiv">
             <div className = "hero-section">
                 <h1 id = "hero-title">Graham<br />&<br />Maddy</h1>
@@ -36,7 +35,6 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
-    </div>
   )
 }
 

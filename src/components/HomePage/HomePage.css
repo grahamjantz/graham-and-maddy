@@ -1,13 +1,11 @@
-.home-page {
-    height: 100%;
-    width: 80%;
-    padding-top: 5em;
-}
-
 .main-div {
+    height: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    justify-content: space-between;
 }
 
 
@@ -95,6 +93,16 @@
 .the-wedding-section h5 {
     margin-bottom: -0.5em;
 }
+
+@media only screen and (max-width: 1200px) {
+    .hero-section {
+        gap: 1em;
+    }    
+    .the-wedding-section{
+        gap: 0;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .the-wedding-section {
         display: none;
@@ -127,17 +135,5 @@
                         "where"
                         "reception";
         justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .main-div {
-        height: 900px;
-    }
-}
-
-@media only screen and (max-width:400px) {
-    .main-div {
-        height: 800px;
     }
 }
