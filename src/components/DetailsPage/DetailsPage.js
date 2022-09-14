@@ -4,7 +4,6 @@ import flower from '../../images/Flowers_grey.png'
 
 const DetailsPage = () => {
   return (
-        <div className="details-main-div">
             <div className="details-section">
                   <h2 id="details-title">Details</h2>
                 <div id="when">
@@ -24,10 +23,8 @@ const DetailsPage = () => {
                     <h5 className="details-section-subtext">185 Canyon Blvd W</h5>
                     <h5 className="details-section-subtext">Lethbridge, AB T1K 6V1</h5>
                 </div>
-                <img src={flower} className = "flower" alt='flower'/>
+                <img src={flower} className = "det-flower" alt='flower'/>
             </div> 
-            
-        </div>
   )
 }
 

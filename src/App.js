@@ -9,9 +9,9 @@ import RegistryPage from './components/RegistryPage/RegistryPage';
 import RsvpPage from './components/RsvpPage/RsvpPage'
 import { Route, Routes } from 'react-router-dom';
 
+export const invitesSent = false;
+
 const App = () => {  
-
-
   return (
     <div className="App">
       <NavbarList />
@@ -21,8 +21,8 @@ const App = () => {
           <Route path='/our-story' element={<OurStoryPage />}>OUR STORY</Route>
           <Route path='/details' element={<DetailsPage />}>DETAILS</Route>
           <Route path='/directions' element={<DirectionsPage />}>DIRECTIONS</Route>
-          <Route path='/registry' element={<RegistryPage />}>REGISTRY</Route>
-          <Route path='/rsvp' element={<RsvpPage />}>RSVP</Route>
+          <Route path='/registry' element={<RegistryPage invitesSent={invitesSent}/>}>REGISTRY</Route>
+          <Route path='/rsvp' element={<RsvpPage invitesSent={invitesSent}/>}>RSVP</Route>
         </Routes>
       </div>
     </div>

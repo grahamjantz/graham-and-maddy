@@ -1,15 +1,53 @@
 .rsvp-section {
-    height: 100%;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 80%;
     font-size: 1.5em;
     line-height: 1.5em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
 }
-.rsvp-section h2, .rsvp-section h3, .reception-to-follow {
+.rsvp-title {
+    width: fit-content;
+    border-bottom: 1px solid var(--main-rust);
+    margin-bottom: 5em;
+}
+.rsvp-section-subtitle {
+    width: 80%;
     border-bottom: 1px solid var(--main-rust);
 }
 .rsvp-section-subtext {
     font-family: Raleway;
     font-size: 0.7em;
+    width: 80%;
+}
+
+.rsvp-button {
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--main-rust);
+}
+
+.rsvp-button a {
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--main-rust);
+    line-height: 3em;
+}
+.rsvp-button a:hover {
+    text-decoration: none;
+    color: var(--main-cream);
+}
+.rsvp-button:hover {
+    background-color: var(--main-rust);
+    color: var(--main-cream);
+}
+
+@media only screen and (max-width: 500px) {
+    .rsvp-section {
+        font-size: 1.2em;
+    }
 }

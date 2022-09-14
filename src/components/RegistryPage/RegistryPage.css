@@ -1,28 +1,84 @@
-.registry-main-div {
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
 .registry-section {
-    width: 50%;
-    height: 100%;
+    width: 80%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     font-size: 1.5em;
     line-height: 1.5em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
+    gap: 10em;
 }
-.registry-section h2, .registry-section h3, .reception-to-follow {
+.registry-section h2 {
+    font-size: 2em;
+    width: fit-content;
+    border-bottom: 1px solid var(--main-rust);
+}
+
+.registry-section h3 {
     border-bottom: 1px solid var(--main-rust);
 }
 
 .registry-section-subtext {
     font-family: Raleway;
     font-size: 0.7em;
+    width: 80%;
+}
+
+.registry-stores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8em;
+}
+
+.registry-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.logo {
+    width: 50%;
+}
+
+.link-button {
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--main-rust);
+}
+
+.link-button a {
+    border-radius: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--main-rust);
+    line-height: 3em;
+}
+.link-button a:hover {
+    text-decoration: none;
+    color: var(--main-cream);
+}
+.link-button:hover {
+    background-color: var(--main-rust);
+    color: var(--main-cream);
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .registry-section {
+       gap: 5em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .registry-section {
+        font-size: 1.2em;
+    }
+    .logo {
+        width: 70%;
+    }
 }

@@ -1,11 +1,11 @@
 .main-div {
-    height: 100%;
-    width: 60%;
+    height: fit-content;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    justify-content: space-between;
+    margin-top: 5em;
+    font-size: 1.2em;
 }
 
 
@@ -13,7 +13,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 2.5em;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -23,12 +23,11 @@
 }
 
 #hero-title {
-    font-size: 2em;
-    /* padding-bottom: 1.5em; */
+    font-size: 3.5em;
 }
 
-.flower {
-    width: 100%;
+.home-flower {
+    width: 20em;
 }
 
 .rsvp {
@@ -94,6 +93,23 @@
     margin-bottom: -0.5em;
 }
 
+.hero-section h3 {
+    font-size: 1.5em;
+}
+.hero-section h2 {
+    margin: 1em;
+}
+.the-wedding-section {
+    margin: 5% 15%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                    "title"
+                    "when"
+                    "where"
+                    "reception";
+    justify-content: center;
+}
+
 @media only screen and (max-width: 1200px) {
     .hero-section {
         gap: 1em;
@@ -103,37 +119,36 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1050px) {
     .the-wedding-section {
         display: none;
     } 
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (max-width: 600px) {
     .hero-section {
-        margin-top: 0;
-        /* padding-top: 350px; */
+        font-size: smaller;
+        gap: 5em;
     }
-    #hero-title {
-        font-size: 3.5em;
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-section {
+        gap: 1em;
     }
-    .hero-section h3 {
-        font-size: 1.5em;
+}
+@media only screen and (max-width: 450px) {
+    .main-div {
+        font-size: smaller;
     }
-    .hero-section h2 {
-        margin: 1em;
+}
+@media only screen and (max-width: 350px) {
+    .main-div {
+        font-size: 0.7em;
     }
-    .flower {
-        width: 300px;
-    }
-    .the-wedding-section {
-        margin: 5% 15%;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-                        "title"
-                        "when"
-                        "where"
-                        "reception";
-        justify-content: center;
+}
+@media only screen and (max-width: 300px) {
+    .main-div {
+        font-size: 0.65em;
     }
 }

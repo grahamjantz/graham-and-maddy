@@ -1,28 +1,12 @@
-/* .details-main-div {
-    background-position: top;
+.details-section {
+    width: 80%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 70%;
-}  */
-
-.details-section {
-    height: 70%;
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: 
-                    "title"
-                    "when"
-                    "where"
-                    "button"
-                    "reception"
-                    "flower";
     text-align: center;
     justify-content: center;
     gap: 1em;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
@@ -31,7 +15,7 @@
     grid-area: title;
     align-self: center;
     font-size: 1.5em;
-    width: 50%;
+    width: fit-content;
     margin: 0 auto;
 }
 #when {
@@ -44,8 +28,10 @@
 #reception {
     grid-area: reception;
 }
-.flower {
+.det-flower {
     grid-area: flower;
+    align-self: center;
+    width: 20em;
 }
 #details-title, .details-section h3, .reception-to-follow {
     border-bottom: 1px solid var(--main-rust);
@@ -57,11 +43,24 @@
 }
 
 @media only screen and (min-width: 700px) {
-    .details-main-div {
-        height: 1700px;
-    }
-    .flower {
+    .det-flower {
         display: block;
         width: 50%;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .details-section {
+        font-size: 1.2em;
+    }
+    .det-flower {
+        width: 10em;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .details-section {
+        font-size: 1em;
+        gap: 1em;
+        width: 90%;
+    }
+  }

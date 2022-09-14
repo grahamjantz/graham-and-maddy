@@ -5,7 +5,6 @@ import flower from '../../images/Flowers_grey.png';
 
 const OurStoryPage = () => {
   return (
-      <div className = "our-story-main-div">
             <div className = "our-story-section">
                 <h2 id = "our-story-title">Our Story</h2>
                 <figure>
@@ -19,9 +18,8 @@ const OurStoryPage = () => {
                     <p>To which she replied:</p>
                     <p>"Yes."</p>
                 </div>
-                <img src={flower} className = "flower" alt='flower'/>
+                <img src={flower} className = "os-flower" alt='flower'/>
             </div>
-        </div>
   )
 }
 

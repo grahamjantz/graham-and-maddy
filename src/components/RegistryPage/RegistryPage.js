@@ -1,9 +1,11 @@
-import React from 'react'
+import Registry from './Registry'
 import './RegistryPage.css'
+import bbbLogo from '../../images/Bed-Bath-and-Beyond-Logo.png'
+import amazonLogo from '../../images/Amazon_logo.png'
 
-const RegistryPage = () => {
-  return (
-    <div className="registry-main-div">
+const RegistryPage = ({ invitesSent }) => {
+  if (invitesSent === false) {
+    return (
       <div className="registry-section">
           <h2 id="registry-title">Registry</h2>
           <div id="when">
@@ -11,7 +13,22 @@ const RegistryPage = () => {
               <h4 className="registry-section-subtext">Check back later to find links to our registry websites!</h4>
           </div>
       </div> 
-    </div>
+    )
+  }
+  return (
+      <div className="registry-section">
+          <h2 id="registry-title">Registry</h2>
+          <div className="registry-stores">
+                <Registry
+                  logo={bbbLogo}
+                  href='https://www.bedbathandbeyond.ca/store/giftregistry/viewregistryguest/551810640?eventType=Wedding'
+                />
+                <Registry
+                  logo={amazonLogo}
+                  href='https://www.amazon.ca/wedding/share/grahamandmaddy'
+                />
+          </div>
+      </div> 
   )
 }
 

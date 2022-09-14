@@ -9,7 +9,7 @@ const HomePage = () => {
             <div className = "hero-section">
                 <h1 id = "hero-title">Graham<br />&<br />Maddy</h1>
                 <h3>together with their families</h3>
-                <img src={flower} className = "flower" alt='flower'/>
+                <img src={flower} className = "home-flower" alt='flower'/>
                 <h3>joyfully invite you to their wedding celebration</h3>
                 <h2>June 3rd, 2023 @ 3:30pm</h2>
                 <Link to='./rsvp' className = "rsvp">RSVP</Link>

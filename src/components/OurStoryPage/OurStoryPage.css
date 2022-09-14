@@ -1,31 +1,9 @@
-/* .our-story-main-div {
-    background-image: url('../images/CreamArch.1.png');
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 900px;
-    width: 100vw;
-} */
-
 .our-story-section {
-    margin: 0 auto;
     height: 50%;
-    width: 70%;
-    /* display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50px repeat(4, auto);
-    grid-template-areas:
-                    "title"
-                    "image"
-                    "story"
-                    "story"
-                    "story";
-    margin-top: 10%;
-    justify-content: center;
-    text-align: center; */
+    width: 80%;
     display: flex;
     flex-direction: column;
+    gap: 1em;
     line-height: 1em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
@@ -35,15 +13,16 @@
 
 #our-story-title {
     grid-area: title;
-    font-size: 1.5em;
+    font-size: 3em;
     text-align: center;
-    margin: 1em;
+    margin: 1em 0;
+    height: fit-content;
 }
 .hero-image {
     grid-area: image;
     align-self: center;
-    width: 180px;
-    height: 180px;
+    width: 70%;
+    height: auto;
     border: 20px solid white;
     /* border-bottom: 60px solid white; */
 
@@ -60,8 +39,8 @@ figcaption {
     margin: 0 auto;
     grid-area: story;
     align-self: center;
-    width: 80%;
-    font-size: 1em;
+    width: 100%;
+    font-size: 1.5em;
     line-height: 1em;
     display: flex;
     flex-direction: column;
@@ -69,37 +48,56 @@ figcaption {
     justify-content: center;
 }
 
-.flower {
-    display: none;
+.os-flower {
+    width: 50%;
+    display: block;
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 700px) {
-    figcaption {
-        font-size: 1.2em;
+@media only screen and (max-width: 1000px) {
+    .hero-image {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #our-story-paragraph {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .os-flower {
+      display: none;
     }
     .our-story-section {
-        height: 100px;
-    }
-    #our-story-title {
-        font-size: 3em;
-        margin: 20px;
-    }
-    #our-story-paragraph {
-        font-size: 1.5em;
-    }
-    .our-story-main-div {
-        height: 1700px;
-    }
-    figure {
-        margin: 20px;
+        font-size: 0.8em;
     }
     .hero-image {
-        width: 500px;
-        height: 500px;
+        border: 10px solid white;
     }
-    .flower {
-        display: block;
-        width: 50%;
+  }
+
+@media only screen and (max-width: 450px) {
+    .our-story-section {
+        font-size: 0.7em;
+    }
+  }
+@media only screen and (max-width: 400px) {
+    .our-story-section {
+        font-size: 0.6em;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .our-story-section {
+        gap: 0;
+        font-size: 0.59em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .our-story-section{
+        font-size: 0.5em;
     }
 }
