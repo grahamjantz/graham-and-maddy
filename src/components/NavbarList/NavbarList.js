@@ -32,6 +32,11 @@ const NavbarList = () => {
             id: ranNum()
         },
         {
+            text: 'FAQ',
+            href: '/faq',
+            id: ranNum()
+        },
+        {
             text: 'DIRECTIONS',
             href: '/directions',
             id: ranNum()
@@ -45,7 +50,7 @@ const NavbarList = () => {
             text: 'RSVP',
             href: '/rsvp',
             id: ranNum()
-        }
+        },
     ];
 
     const navbarMap = navbarArr.map((item) => {

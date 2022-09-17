@@ -55,6 +55,9 @@
   .flower {
     margin-top: 0;
   }
+  .main-container {
+    min-height: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -63,6 +66,12 @@
     padding-top: 5em;
     height: fit-content;
     min-height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .main-container {
+    padding-top: 2em;
   }
 }
 

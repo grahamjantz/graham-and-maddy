@@ -111,7 +111,7 @@
     transform: translateY(-10px) rotate(90deg);
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1000px) {
     .navbar-list {
         flex-direction: row;
         height: 100px;
@@ -126,17 +126,17 @@
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
     .navbar {
         height: 50px;
         justify-content: space-between;
         align-items: center;
-        padding-top: 1em;
     }
     .banner {
         height: 100px;
         justify-content: space-between;
         padding: 1.5em;
+        margin: 20px;
     }
     #navMenu {
         margin: 0 0 0 0;
@@ -148,7 +148,7 @@
         position: fixed;
     }
     .navbar-list.active {
-        transform: translateY(-50px);
+        transform: translateY(-90px);
     }
     
     .navbar-list.inactive {

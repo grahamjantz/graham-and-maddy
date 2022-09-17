@@ -51,3 +51,10 @@
         font-size: 1.2em;
     }
 }
+
+@media only screen and (max-width: 300px) {
+    .rsvp-section {
+        font-size: 70%;
+        margin-top: 2em;
+    }
+}
