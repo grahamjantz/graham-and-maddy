@@ -20,7 +20,7 @@
   width: 100vw;
   max-width: 100%;
   height: auto;
-  background-image: url('./images/RustTexture.1.png');
+  background-image: url('./images/RustTexture.1.jpg');
   background-size: cover;
   background-color: var(--main-rust);
   color: var(--main-black);
@@ -32,7 +32,7 @@
   min-height: 450vh;
   max-height: fit-content;
   margin: 0 auto;
-  background-image: url('../src/images/CreamArch.1.png');
+  background-image: url('../src/images/CreamArch.gif');
   background-size: 90%;
   background-repeat: no-repeat;
   background-position-x: center;
