@@ -10,7 +10,7 @@ import RegistryPage from './components/RegistryPage/RegistryPage';
 import RsvpPage from './components/RsvpPage/RsvpPage'
 import { Route, Routes } from 'react-router-dom';
 
-export const invitesSent = false;
+export const invitesSent = true;
 
 const App = () => {  
   return (
