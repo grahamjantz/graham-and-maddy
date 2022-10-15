@@ -2,6 +2,7 @@ import React from 'react'
 import './DetailsPage.css'
 import flower from '../../images/Flowers_grey.png'
 
+
 const DetailsPage = () => {
   return (
             <div className="details-section">

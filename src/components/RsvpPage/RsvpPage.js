@@ -1,5 +1,7 @@
 import React from 'react'
 import './RsvpPage.css'
+import flower from '../../images/Flowers_grey.png'
+
 
 const RsvpPage = ({ invitesSent }) => {
   if (invitesSent === false) {
@@ -18,6 +20,8 @@ const RsvpPage = ({ invitesSent }) => {
         <button className='rsvp-button'>
             <a href='https://grahamandmaddy.rsvpify.com' target="_blank" rel="noreferrer">R.S.V.P.</a>
         </button>
+        <img src={flower} className = "det-flower" alt='flower'/>
+
     </div> 
   )
 }

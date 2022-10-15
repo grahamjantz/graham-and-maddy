@@ -2,6 +2,8 @@ import Registry from './Registry'
 import './RegistryPage.css'
 import bbbLogo from '../../images/Bed-Bath-and-Beyond-Logo.png'
 import amazonLogo from '../../images/Amazon_logo.png'
+import flower from '../../images/Flowers_grey.png'
+
 
 const RegistryPage = ({ invitesSent }) => {
   if (invitesSent === false) {
@@ -28,6 +30,7 @@ const RegistryPage = ({ invitesSent }) => {
                   href='https://www.amazon.ca/wedding/share/grahamandmaddy'
                 />
           </div>
+        <img src={flower} className = "det-flower" alt='flower'/>
       </div> 
   )
 }

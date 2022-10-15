@@ -2,6 +2,7 @@ import React from 'react'
 import './DirectionsPage.css'
 import flower from '../../images/Flowers_grey.png'
 
+
 const DirectionsPage = () => {
   return (
           <div className="directions-section">
@@ -22,7 +23,7 @@ const DirectionsPage = () => {
                 <p className="directions-section-subtext">185 Canyon Blvd W</p>
                 <p className="directions-section-subtext">Lethbridge, AB <br className="dir-br"/>T1K 6V1</p>
                 <p className="directions-section-subtext"> Follow Canyon Blvd W down the hill into the golf course, parking is available at the clubhouse with overflow across the street.</p>
-                <img src={flower} className="dir-flower" alt='flower'/>
+                <img src={flower} className = "det-flower" alt='flower'/>
           </div>
   )
 }

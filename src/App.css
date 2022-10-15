@@ -20,26 +20,29 @@
   width: 100vw;
   max-width: 100%;
   height: auto;
-  background-image: url('./images/RustTexture.1.jpg');
-  background-size: cover;
+  padding: 0 0 5em 0;
+  background-image: url('./images/RustTexture_smallV1.jpg');
+  background-size: 150px;
+  /* background-repeat:space; */
   background-color: var(--main-rust);
   color: var(--main-black);
 }
 
 .main-container {
-  width: 100%;
+  width: 90%;
   max-width: 1300px;
-  min-height: 450vh;
-  max-height: fit-content;
+  /* min-height: 450vh;
+  max-height: fit-content; */
+  height: fit-content;
   margin: 0 auto;
-  background-image: url('../src/images/CreamArch.gif');
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position-x: center;
+  margin-top: 2em;
+  background-image: url('../src/images/cream_texture_small.jpg');
+  background-size: 150px;
   display: flex;
   justify-content: center;
   padding-top: 15em;
-  padding-bottom: 400px;
+  /* padding-bottom: 200px; */
+  border-radius: 1000px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -75,3 +78,11 @@
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .App, .main-container {
+    background-size: 250px;
+  }
+  .main-container {
+    margin-top: 10em;
+  }
+}

@@ -7,8 +7,6 @@
     justify-content: space-around;
     align-items: center;
     gap: 3em;
-    font-size: 2em;
-    line-height: 1.5em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
 }
@@ -31,71 +29,8 @@
     font-size: 1em;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 700px) {
     .faq-section {
-        gap: 2em;
-    }
-}
-@media only screen and (max-width: 1100px) {
-    .question, .answer {
-        font-size: 0.7em;
-        line-height: 1.2em;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .faq-section {
-        gap: 1em;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    #faq-title {
-        font-size: 1em;
-    }
-    .question, .answer {
-        font-size: 0.6em;
-        line-height: 1em;
-    }
-}
-@media only screen and (max-width: 550px) {
-    .faq-section {
-        gap: 0.7em;
-    }
-    .question, .answer {
-        font-size: 0.5em;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    #faq-title {
-        font-size: 0.9em;
-    }
-
-    .question, .answer {
-        font-size: 0.4em;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .faq-section {
-        gap: 0.3em;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    #faq-title {
-        font-size: 0.7em;
-    }
-    .question, .answer {
-        font-size: 0.35em;
-    }
-}
-@media only screen and (max-width: 300px) {
-    #faq-title {
-        font-size: 0.5em;
-    }
-    .question, .answer {
-        font-size: 0.3em;
+        font-size: 2em;
     }
 }

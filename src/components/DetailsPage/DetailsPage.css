@@ -1,12 +1,12 @@
 .details-section {
-    width: 80%;
+    width: 90%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     gap: 1em;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
@@ -29,9 +29,11 @@
     grid-area: reception;
 }
 .det-flower {
+    width: 50%;
+    max-width: 400px;
     grid-area: flower;
     align-self: center;
-    width: 20em;
+    margin: 5em 0;
 }
 #details-title, .details-section h3, .reception-to-follow {
     border-bottom: 1px solid var(--main-rust);
@@ -42,39 +44,4 @@
     font-size: 0.7em;
 }
 
-@media only screen and (min-width: 700px) {
-    .det-flower {
-        display: block;
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .details-section {
-        font-size: 1.2em;
-    }
-    .det-flower {
-        width: 10em;
-    }
-}
-@media only screen and (max-width: 400px) {
-    .details-section {
-        font-size: 1em;
-        gap: 1em;
-        width: 90%;
-    }
-  }
-@media only screen and (max-width: 300px) {
-    .details-section {
-        font-size: 1em;
-        gap: 1em;
-        width: 80%;
-    }
-    .det-flower {
-        display: none;
-    }
-    #when, #where, #reception {
-        gap: 0;
-    }
-  }
 

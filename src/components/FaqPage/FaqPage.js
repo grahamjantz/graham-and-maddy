@@ -1,5 +1,7 @@
 import React from 'react'
 import './FaqPage.css'
+import flower from '../../images/Flowers_grey.png'
+
 
 const FaqPage = () => {
   return (
@@ -13,6 +15,7 @@ const FaqPage = () => {
         <p className='answer'>Although the ceremony does not start till 3:30pm, we advise guests to arrive 15 minutes prior. This will allow for flexible time to park, enter the venue, chat a little, and get seated.</p>        
         <h3 className='question'>Will there be options for transportation between the ceremony and reception?</h3>
         <p className='answer'>We will not have any prearranged shuttle service but if you require a taxi between the ceremony and reception Lethbridge's 94 Cabs can be reached at 403-942-5694.</p>        
+        <img src={flower} className = "det-flower" alt='flower'/>
     </div> 
   )
 }

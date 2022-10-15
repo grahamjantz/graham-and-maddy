@@ -1,19 +1,21 @@
 .directions-section {
-    width: 80%;
+    width: 90%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    font-size: 2em;
     line-height: 1.5em;
+    font-size: 1em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
+    gap: 0.5em;
 }
 #directions-title {
+    margin: 1em 0;
     grid-area: title;
     align-self: center;
-    font-size: 1.5em;
+    font-size: 2em;
     width: fit-content;
 }
 .ceremony-title, .reception-title {
@@ -25,57 +27,10 @@
 }
 .directions-section-subtext {
     font-family: Raleway;
-    font-size: 0.7em;
 }
 
-.dir-flower {
-    width: 200px;
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 1000px) {
     .directions-section {
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .directions-section {
-        width: 70%;
-        font-size: 1.1em;
-        gap: 0.3em;
-    }
-    /* .dir-br {
-        display: none;
-    } */
-}
-@media only screen and (max-width: 500px) {
-    .directions-section {
-        font-size: 1em;
-    }
-    .dir-flower {
-        display: none;
-    }
-}
-@media only screen and (max-width: 450px) {
-    .directions-section {
-        font-size: 1em;
-        line-height: 1.2em;
-        justify-content: center;
-        gap: 0;
-    }
-  }
-@media only screen and (max-width: 350px) {
-    .directions-section {
-        font-size: 0.9em;
-        line-height: 1em;
-        justify-content: center;
-        gap: 0;
-    }
-  }
-
-  @media only screen and (max-width: 300px) {
-    .directions-section {
-        font-size: 0.7em;
-        margin-top: 2em;
+        font-size: 2em;
     }
 }
