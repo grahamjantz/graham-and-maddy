@@ -92,4 +92,4 @@ const NavbarList = () => {
   )
 }
 
-export default NavbarList
+export default NavbarList;
