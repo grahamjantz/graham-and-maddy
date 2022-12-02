@@ -5,14 +5,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.75rem;
     line-height: 1.5em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
-    gap: 10em;
+    gap: 3rem;
 }
-.registry-section h2 {
-    font-size: 2em;
+.registry-title {
+    font-size: 4rem;
+    margin: 4rem 0;
+    padding-bottom: 1rem;
     width: fit-content;
     border-bottom: 1px solid var(--main-rust);
 }
@@ -23,7 +25,7 @@
 
 .registry-section-subtext {
     font-family: Raleway;
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
     width: 80%;
 }
 
@@ -76,7 +78,7 @@
 }
 @media only screen and (max-width: 500px) {
     .registry-section {
-        font-size: 1.2em;
+        /* font-size: 1.2em; */
     }
     .logo {
         width: 70%;
@@ -85,7 +87,7 @@
 
 @media only screen and (max-width: 300px) {
     .registry-section {
-        font-size: 70%;
+        /* font-size: 70%; */
         margin-top: 2em;
     }
 }

@@ -9,7 +9,7 @@ const RegistryPage = ({ invitesSent }) => {
   if (invitesSent === false) {
     return (
       <div className="registry-section">
-          <h2 id="registry-title">Registry</h2>
+          <h2 className="registry-title">Registry</h2>
           <div id="when">
               <h3>Coming Soon!</h3>
               <h4 className="registry-section-subtext">Check back later to find links to our registry websites!</h4>
@@ -19,7 +19,7 @@ const RegistryPage = ({ invitesSent }) => {
   }
   return (
       <div className="registry-section">
-          <h2 id="registry-title">Registry</h2>
+          <h2 className="registry-title">Registry</h2>
           <div className="registry-stores">
                 <Registry
                   logo={bbbLogo}

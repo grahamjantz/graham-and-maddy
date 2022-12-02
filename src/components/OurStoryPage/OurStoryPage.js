@@ -21,7 +21,7 @@ const OurStoryPage = () => {
                       lazyLoad={true}
                       autoPlay={true}
                       showFullscreenButton={false}
-                      
+                      slideInterval='10000'
                     />
                   </div>
                   {/* <img src={proposal} className = "hero-image" alt='proposal'/> */}

@@ -4,15 +4,18 @@
     align-items: center;
     height: fit-content;
     width: 80%;
-    font-size: 1.5em;
+    font-size: 1.75rem;
     line-height: 1.5em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
 }
 .rsvp-title {
+    font-size: 4rem;
+    margin: 4rem 0;
+    padding-bottom: 1rem;
     width: fit-content;
     border-bottom: 1px solid var(--main-rust);
-    margin-bottom: 5em;
+    margin-bottom: 6rem;
 }
 .rsvp-section-subtitle {
     width: 80%;
@@ -20,8 +23,6 @@
 }
 .rsvp-section-subtext {
     font-family: Raleway;
-    font-size: 0.7em;
-    width: 80%;
 }
 
 .rsvp-button {
@@ -48,13 +49,13 @@
 
 @media only screen and (max-width: 500px) {
     .rsvp-section {
-        font-size: 1.2em;
+        /* font-size: 1.2em; */
     }
 }
 
 @media only screen and (max-width: 300px) {
     .rsvp-section {
-        font-size: 70%;
+        /* font-size: 70%; */
         margin-top: 2em;
     }
 }

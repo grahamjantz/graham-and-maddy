@@ -6,16 +6,17 @@
     align-items: center;
     justify-content: space-around;
     line-height: 1.5em;
-    font-size: 1em;
+    font-size: 1.75rem;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
     gap: 0.5em;
 }
 #directions-title {
-    margin: 1em 0;
+    margin: 4rem 0;
+    padding-bottom: 1rem;
     grid-area: title;
     align-self: center;
-    font-size: 2em;
+    font-size: 4rem;
     width: fit-content;
 }
 .ceremony-title, .reception-title {
@@ -31,6 +32,6 @@
 
 @media only screen and (min-width: 1000px) {
     .directions-section {
-        font-size: 2em;
+        /* font-size: 2em; */
     }
 }

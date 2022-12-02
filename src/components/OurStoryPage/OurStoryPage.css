@@ -15,9 +15,9 @@
 
 #our-story-title {
     grid-area: title;
-    font-size: 3em;
+    font-size: 4rem;
     text-align: center;
-    margin: 1em 0;
+    margin: 4rem 0;
 }
 .hero-image {
     grid-area: image;
@@ -44,7 +44,7 @@
     margin-top: 10px;
     width: 200%;
     z-index: 1;
-    margin-top: -45px;
+    margin-top: -40px;
 }
 
 .image-gallery-react {
@@ -67,7 +67,7 @@ figcaption {
     grid-area: story;
     align-self: center;
     width: 90%;
-    font-size: 1.5em;
+    font-size: 2rem;
     line-height: 1em;
     display: flex;
     flex-direction: column;
@@ -89,11 +89,8 @@ figcaption {
     .cream-rip-transition-down, .cream-rip-transition-up {
         width: 100%;
     }
-    .cream-rip-transition-up {
-        margin-top: -65px;
-    }
     .image-gallery-react {
-        margin-top:-50px;
+        margin-top:-45px;
     }
     .os-flower.one {
         margin: 3em;
@@ -110,4 +107,8 @@ figcaption {
 
 .gallery-img:first-of-type {
     width: 100% !important;
+}
+
+.image-gallery-left-nav > svg > polyline {
+    height: 10px;
 }

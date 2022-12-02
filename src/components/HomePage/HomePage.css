@@ -5,8 +5,8 @@
     flex-direction: column;
     align-items: center;
     margin-top: 5em;
-    font-size: 1.2em;
     margin-bottom: 5em;
+    font-size: 1.75rem;
 }
 
 
@@ -24,11 +24,14 @@
 }
 
 #hero-title {
-    font-size: 3.5em;
+    font-size: 4rem;
+}
+.hero-section h2 {
+    font-size: 1.75rem;
 }
 
 .home-flower {
-    width: 20em;
+    width: 90%;
 }
 
 .rsvp {
@@ -47,7 +50,7 @@
 }
 
 .the-wedding-section {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 10px 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
@@ -59,7 +62,6 @@
     justify-content: center;
     gap: 1em;
     margin: 20%;
-    font-size: 1.5em;
     line-height: 1.5em;
     font-family: 'Ibarra Real Nova';
     color: var(--main-black);
@@ -94,12 +96,6 @@
     margin-bottom: -0.5em;
 }
 
-.hero-section h3 {
-    font-size: 1.5em;
-}
-.hero-section h2 {
-    margin: 1em;
-}
 .the-wedding-section {
     margin: 5% 15%;
     grid-template-columns: 1fr;
@@ -111,45 +107,18 @@
     justify-content: center;
 }
 
-@media only screen and (max-width: 1200px) {
-    .hero-section {
-        gap: 1em;
-    }    
-    .the-wedding-section{
-        gap: 0;
-    }
-}
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (min-width: 750px) {
     .the-wedding-section {
-        display: none;
-    } 
-}
-
-@media only screen and (max-width: 600px) {
-    .hero-section {
-        font-size: smaller;
-        gap: 5em;
+        display: grid;
     }
-}
-
-@media only screen and (max-width: 500px) {
-    .hero-section {
-        gap: 1em;
+    #hero-title {
+        font-size: 5rem !important;
+        margin: 0;
+        padding: 0;
     }
-}
-@media only screen and (max-width: 450px) {
     .main-div {
-        font-size: smaller;
-    }
-}
-@media only screen and (max-width: 350px) {
-    .main-div {
-        font-size: 0.7em;
-    }
-}
-@media only screen and (max-width: 300px) {
-    .main-div {
-        font-size: 0.65em;
+        margin-top: 2rem;
+        font-size: 2.5rem;
     }
 }

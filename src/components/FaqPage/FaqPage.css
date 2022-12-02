@@ -9,13 +9,14 @@
     gap: 3em;
     color: var(--main-black);
     font-family: 'Ibarra Real Nova';
+    font-size: 1.75rem;
 }
 #faq-title {
     grid-area: title;
     align-self: center;
-    font-size: 1.5em;
+    font-size: 4rem;
     width: fit-content;
-    margin: 0 auto;
+    margin: 4rem 0;
 }
 #faq-title, .faq-section h3 {
     border-bottom: 1px solid var(--main-rust);
@@ -23,14 +24,4 @@
 
 .question {
     width: fit-content;
-}
-
-.question, .answer {
-    font-size: 1em;
-}
-
-@media only screen and (min-width: 700px) {
-    .faq-section {
-        font-size: 2em;
-    }
 }
