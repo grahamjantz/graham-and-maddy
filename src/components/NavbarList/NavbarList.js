@@ -41,11 +41,11 @@ const NavbarList = () => {
             href: '/directions',
             id: ranNum()
         },
-        {
-            text: 'REGISTRY',
-            href: '/registry',
-            id: ranNum()
-        },
+        // {
+        //     text: 'REGISTRY',
+        //     href: '/registry',
+        //     id: ranNum()
+        // },
         {
             text: 'RSVP',
             href: '/rsvp',
